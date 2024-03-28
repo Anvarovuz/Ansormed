@@ -3,6 +3,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -14,7 +18,7 @@ body {
 }
 
 *:focus{
-  outline: 2px dotted #de2e54;
+  outline: 2px dotted #de2e10;
   outline-offset: 2px;
 }
 
@@ -59,7 +63,7 @@ body {
 }
 
 .site-logo:hover {
-  color: #de2e54;
+  color: #de2e10;
 }
 
 .site-logo:active {
@@ -103,7 +107,7 @@ border-radius: 50%;
 }
 
 .sitenav-link:hover {
-  color: #de2e54;
+  color: #de2e10;
 }
 
 .sitenav-link:active {
@@ -115,7 +119,7 @@ border-radius: 50%;
 }
 
 .sitenav-site-footer .sitenav-link:hover {
-  color: #de2e54;
+  color: #de2e10;
 }
 
 .sitenav-site-footer .sitenav-link:active {
@@ -132,7 +136,7 @@ border-radius: 50%;
   font-size: 8px;
   font-family: "Open Sans Condensed", "Open Sans", "Arial", "San-serif";
   letter-spacing: 2px;
-  background-color: #de2e54;
+  background-color: #de2e10;
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
@@ -140,11 +144,11 @@ border-radius: 50%;
 
 .main-link:hover {
   background-color: #fff;
-  color: #de2e54;
+  color: #de2e10;
 }
 
 .main-link:active {
-  background-color: #de2e54;
+  background-color: #de2e10;
   color: #fff;
   opacity: 0.6;
 }
@@ -158,6 +162,18 @@ color: #fff;
 .main-link-solid:active {
   background-color: rgba(222, 46, 84, 0.6);
   opacity: 1;
+}
+
+.main-link-outline {
+  border-color: #fff;
+  background-color: transparent;
+  color: #fff;
+}
+
+.main-link-outline:hover {
+  border-color: transparent;
+  background-color: #de2e10;
+  color: #fff;
 }
 
 /* HERO  */
@@ -257,6 +273,36 @@ color: #fff;
   display: flex;
   justify-content: center;
 }
+
+/* CTA */
+
+.cta {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  background-color: #0EB4C1;
+  color: #fff;
+}
+
+.cta-heading{
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-style: 36px;
+  line-height: 1.2;
+  font-family: "Open Sans Condensed", "Open Sans", "Arial", sans-serif;
+  text-align: center;
+
+}
+
+.cta-links {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.cta-links-item:not(:last-child) {
+  margin-right: 40px;
+}
+
 
 /* SITE FOOTER  */
 
